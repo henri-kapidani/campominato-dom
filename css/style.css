@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+body {
+	background-color: turquoise;
+}
+
+header {
+	height: 5rem;
+	background-color: white;
+}
+
+header .container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+header h1 {
+	margin-right: auto;
+}
+
+header label,
+header select,
+header button {
+	margin: .5rem;
+}
+
+main {
+	display: flex;
+	height: calc(100vh - 10rem);
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 500px;
+	height: 500px;
+	border: 2px solid black;
+}
+
+.grid .guide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+}
+
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px black solid;
+	cursor: pointer;
+}
+
+.cell.selected {
+	background-color: blueviolet;
+}
+
+.cell.bomb {
+	background-color: red;
+}
+
+.output {
+	height: 2rem;
+	text-align: center;
+}
+
+footer {
+	height: 3rem;
+	background-color: white;
+}
+
+footer .container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
